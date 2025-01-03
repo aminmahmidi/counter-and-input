@@ -1,7 +1,10 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 import Input from "./pages/Input";
 import Home from "./pages/Home";
 import Counter from "./pages/Counter";
@@ -13,7 +16,10 @@ import "./App.css";
       children: [
         {
           index: true,
-          path: "/input",
+          element: <Input />,
+        },
+        {
+          path:'/input',
           element: <Input />,
         },
         {
