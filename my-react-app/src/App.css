@@ -34,6 +34,9 @@ a {
 a svg {
   margin: 0 10px 0 0;
 }
+button , a{
+    transition: 0.3s;
+}
 @media screen and (max-width: 800px) {
   .navbar {
     width: 100%;
@@ -58,9 +61,14 @@ a svg {
   margin: 10% auto 0 auto;
   background-color: rgba(244, 244, 244, 0.874);
   border-radius: 20px;
-  box-shadow: 0px 6px 30px 0px rgba(128, 128, 128, 0.408);
+  box-shadow: 0px 4px 20px 0px rgba(128, 128, 128, 0.408);
+  animation: box 0.4s alternate;
 }
-
+@keyframes box {
+  0% {
+    scale: 0.9;
+  }
+}
 input {
   width: 100%;
   padding: 7px 9px;
@@ -96,8 +104,8 @@ input:focus {
   border-radius: 50px;
   transition: 0.3s;
 }
-.text-btn:hover{
-    background-color: #079c61;
+.text-btn:hover {
+  background-color: #079c61;
 }
 .preview {
   background-color: #16c47e37;
@@ -122,7 +130,7 @@ h4 {
 .btn-container {
   display: flex;
   width: 50%;
-  margin: 30px  0 0 0;
+  margin: 30px 0 0 0;
 }
 .count-btn {
   display: grid;
@@ -134,14 +142,14 @@ h4 {
   color: white;
   cursor: pointer;
 }
-.count-btn:hover{
-    background-color: #079c61;
+.count-btn:hover {
+  background-color: #079c61;
 }
 .counter {
   text-align: center;
 }
-.reset{
-    margin-left: 20px;
+.reset {
+  margin-left: 20px;
 }
 .counter p {
   background-color: #16c47e37;
